@@ -12,9 +12,10 @@
 // add(number1,number2);
 
 type User = { name: string; age: number };
- 
- function add(user: User):void {
+
+function add(user: User): void {
   console.log(user.name);
 }
-console.log(
-add({ name: "name", age: 23 }));
+console.log(add({ name: "name", age: 23 }));
+
+let combine: (a: number, b: string) => void;
