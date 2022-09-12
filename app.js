@@ -6,3 +6,4 @@ function add(user) {
 }
 console.log(add({ name: "name", age: 23 }));
 let combine;
+let vat;
