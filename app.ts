@@ -18,4 +18,5 @@ function add(user: User): void {
 }
 console.log(add({ name: "name", age: 23 }));
 
-let combine: (a: number, b: string) => void;
+let combine= (a: number, b: string="1") => {console.log('gi');
+};
