@@ -11,12 +11,21 @@
 // number1=5
 // add(number1,number2);
 
-type User = { name: string; age: number };
+// type User = { name: string; age: number };
 
-function add(user: User): void {
-  console.log(user.name);
-}
-console.log(add({ name: "name", age: 23 }));
+// function add(user: User): void {
+//   console.log(user.name);
+// }
+// console.log(add({ name: "name", age: 23 }));
 
-let combine= (a: number, b: string="1") => {console.log('gi');
-};
+// let combine= (a: number, b: string="1") => {console.log('gi');
+// };
+
+// let a:string[]
+// a=[1,2,3,'g']
+// console.log(a);
+
+const a=(...numbers:number[])=>console.log(numbers);
+
+a(1,2,1);
+
