@@ -22,6 +22,7 @@
 // a(1,2,1);
 class Main {
     constructor(m) {
+        this.aman = 44;
         this.name = m;
     }
     describe() {

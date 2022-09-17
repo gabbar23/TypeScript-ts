@@ -29,24 +29,21 @@
 
 // a(1,2,1);
 
+class Main {
+  private readonly name: string;
+  protected aman: number = 44;
 
+  constructor(m: string) {
+    this.name = m;
+  }
 
-class Main{
-    name:string;
-
-    constructor(m:string){
-        this.name=m;
-    }
-
-    describe(this:Main){
-        console.log(this.name);
-        
-    }
+  public describe(this: Main) {
+    console.log(this.name);
+  }
 }
 
-const a1=new Main("aman");
+const a1 = new Main("aman");
 // a1.describe();
 
-
-const onj={describe:a1.describe}
+const onj = { describe: a1.describe };
 onj.describe.bind(a1);
