@@ -47,3 +47,24 @@ const a1 = new Main("aman");
 
 const onj = { describe: a1.describe };
 onj.describe.bind(a1);
+
+interface aman {
+  type:"aman";
+  name: string;
+
+
+}
+
+class lg  {
+
+  name="hi";
+  greet(a:string){
+    return "hi"
+  }
+}
+console.log("hi");
+
+const aman2:aman={type:"aman",name:"hi"}
+
+const htmlinput:HTMLInputElement=document.querySelector('fdfas')!;
+const htmlinput2=<HTMLInputElement>document.querySelector('fdfas')!;

@@ -33,3 +33,15 @@ const a1 = new Main("aman");
 // a1.describe();
 const onj = { describe: a1.describe };
 onj.describe.bind(a1);
+class lg {
+    constructor() {
+        this.name = "hi";
+    }
+    greet(a) {
+        return "hi";
+    }
+}
+console.log("hi");
+const aman2 = { type: "aman", name: "hi" };
+const htmlinput = document.querySelector('fdfas');
+const htmlinput2 = document.querySelector('fdfas');
