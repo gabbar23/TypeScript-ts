@@ -68,3 +68,4 @@ const aman2:aman={type:"aman",name:"hi"}
 
 const htmlinput:HTMLInputElement=document.querySelector('fdfas')!;
 const htmlinput2=<HTMLInputElement>document.querySelector('fdfas')!;
+const htmlinput3=document.querySelector('fdfas')! as HTMLInputElement;
