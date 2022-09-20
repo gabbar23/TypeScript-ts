@@ -69,3 +69,27 @@ const aman2:aman={type:"aman",name:"hi"}
 const htmlinput:HTMLInputElement=document.querySelector('fdfas')!;
 const htmlinput2=<HTMLInputElement>document.querySelector('fdfas')!;
 const htmlinput3=document.querySelector('fdfas')! as HTMLInputElement;
+
+interface lengthy{
+  length:number
+}
+
+function countAndDescribe<T extends lengthy>(elemnt:T):[T,string]{
+  let des="got not Elements";
+  if(elemnt.length==1){
+    des="1 Element"
+  }
+  else if(elemnt.length>1){
+    des=`${elemnt.length}`;
+  }
+  return [elemnt,des]
+}
+
+console.log(countAndDescribe(['sport']));
+
+function extract <T extends object,U extends keyof T> (obj:T,s:U){
+  return obj[s];
+}
+
+console.log(extract({aman:"lol"},"aman"));
+// console.log(extract({damanm:"lol"},"aman"));
