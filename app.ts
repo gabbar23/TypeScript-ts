@@ -67,7 +67,7 @@
 
 // const htmlinput:HTMLInputElement=document.querySelector('fdfas')!;
 // const htmlinput2=<HTMLInputElement>document.querySelector('fdfas')!;
-// const htmlinput3=document.querySelector('fdfas')! as HTMLInputElement;
+// const htmlinput3=document.qu rySelector('fdfas')! as HTMLInputElement;
 
 // interface lengthy{
 //   length:number
@@ -93,32 +93,39 @@
 // console.log(extract({aman:"lol"},"aman"));
 // // console.log(extract({damanm:"lol"},"aman"));
 
-function Logger(cons: Function) {
-  console.log(cons);
+// function Logger(cons: Function) {
+//   console.log(cons);
+// }
+// function WithTemplate(template: string, hookid: string) {
+//   return function (constructor: any) {
+//     const hookEl = document.getElementById(hookid);
+//     const cons = new constructor();
+//     // const cons = new constructor("aman");
+//     console.log(hookEl);
+
+//     if (hookEl) {
+//       hookEl.innerHTML = template;
+//       console.log(hookEl.querySelector("h1"));
+
+//       hookEl.querySelector("h1")!.textContent = cons.name;
+//     }
+//   };
+// }
+
+// @WithTemplate("<h1>HEllo</h1>", "app")
+// class Mains {
+//   private name: string;
+//   constructor(name:string) {
+//     this.name = name;
+//     console.log("hello");
+//   }
+// }
+
+// const a12 = new Mains("aman");
+
+class Main{
+   private readonly s="11";
+
+set setname(name:String){
 }
-function WithTemplate(template: string, hookid: string) {
-  return function (constructor: any) {
-    const hookEl = document.getElementById(hookid);
-    const cons = new constructor();
-    // const cons = new constructor("aman");
-    console.log(hookEl);
-
-    if (hookEl) {
-      hookEl.innerHTML = template;
-      console.log(hookEl.querySelector("h1"));
-
-      hookEl.querySelector("h1")!.textContent = cons.name;
-    }
-  };
 }
-
-@WithTemplate("<h1>HEllo</h1>", "app")
-class Mains {
-  private name: string;
-  constructor(name:string) {
-    this.name = name;
-    console.log("hello");
-  }
-}
-
-const a12 = new Mains("aman");
